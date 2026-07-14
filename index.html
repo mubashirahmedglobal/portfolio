@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mubashir Ahmed — Senior HR Executive</title>
+<meta name="description" content="Portfolio of Mubashir Ahmed, Senior Human Resources Executive with 13+ years in talent supply chain, bench management, and HR operations for global enterprises." />
+<meta name="theme-color" content="#14171F" />
+<meta property="og:title" content="Mubashir Ahmed — Senior HR Executive" />
+<meta property="og:description" content="13+ years in talent supply chain, bench management, and HR operations for global enterprises." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%2314171F'/%3E%3Ctext x='50' y='69' font-size='56' font-family='Arial,sans-serif' font-weight='700' fill='%23EEF0F1' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --paper: #EEF0F1;
+    --surface: #FFFFFF;
+    --ink: #14171F;
+    --slate: #4B5058;
+    --slate-faint: #868D93;
+    --line: #D7DBDC;
+    --stamp: #9C3B32;
+    --radius: 6px;
+    --radius-sm: 3px;
+    --max-width: 1080px;
+    --font-sans: 'IBM Plex Sans', -apple-system, sans-serif;
+    --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+  }
+
+  * , *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background-color: var(--paper);
+    background-image: radial-gradient(rgba(20,23,31,0.06) 1px, transparent 1px);
+    background-size: 22px 22px;
+    color: var(--ink);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img, svg { display: block; max-width: 100%; }
+  a { color: inherit; text-decoration: none; }
+  ul, dl, dd { margin: 0; padding: 0; list-style: none; }
+  h1, h2, h3 { font-family: var(--font-sans); margin: 0; color: var(--ink); }
+  p { margin: 0; }
+  section, header, footer { position: relative; }
+  section[id], header[id] { scroll-margin-top: 84px; }
+
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--stamp);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  .wrap { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
+
+  .tag-label {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    color: var(--stamp);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    font-weight: 500;
+  }
+
+  .section-title {
+    font-size: clamp(1.6rem, 3vw, 2.1rem);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    line-height: 1.25;
+    margin-bottom: 48px;
+    max-width: 620px;
+  }
+
+  /* ---------- NAV ---------- */
+  #navbar {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(238,240,241,0.86);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-logo {
+    font-family: var(--font-mono);
+    font-weight: 600;
+    font-size: 0.92rem;
+    letter-spacing: 0.05em;
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .nav-link {
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--slate);
+    position: relative;
+    padding: 4px 0;
+    transition: color 0.2s ease;
+  }
+  .nav-link:hover { color: var(--ink); }
+  .nav-link.active { color: var(--ink); }
+  .nav-link.active::after {
+    content: '';
+    position: absolute;
+    left: 0; right: 0; bottom: -6px;
+    height: 2px;
+    background: var(--stamp);
+  }
+  .nav-cta {
+    padding: 8px 16px;
+    border: 1px solid var(--ink);
+    border-radius: var(--radius);
+  }
+  .nav-cta.active::after { display: none; }
+  .nav-cta:hover { background: var(--ink); color: var(--paper); }
+
+  .nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 32px; height: 32px;
+    background: none; border: none; cursor: pointer; padding: 0;
+  }
+  .nav-toggle span {
+    display: block; width: 100%; height: 2px;
+    background: var(--ink);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  .nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-toggle.open span:nth-child(2) { opacity: 0; }
+  .nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  /* ---------- HERO ---------- */
+  .hero { padding: 148px 0 100px; overflow: hidden; }
+  .hero-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: 1.35fr 0.65fr;
+    gap: 40px;
+    align-items: center;
+  }
+  .hero-text > * { animation: heroRise 0.7s ease both; }
+  .hero-text > *:nth-child(1) { animation-delay: 0.05s; }
+  .hero-text > *:nth-child(2) { animation-delay: 0.12s; }
+  .hero-text > *:nth-child(3) { animation-delay: 0.19s; }
+  .hero-text > *:nth-child(4) { animation-delay: 0.26s; }
+  .hero-text > *:nth-child(5) { animation-delay: 0.33s; }
+  @keyframes heroRise {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .hero h1 {
+    font-size: clamp(2.6rem, 6vw, 4.1rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    margin-top: 14px;
+  }
+  .hero-role {
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: var(--slate);
+    margin-top: 18px;
+  }
+  .hero-desc {
+    margin-top: 18px;
+    max-width: 480px;
+    color: var(--slate);
+    font-size: 1.02rem;
+  }
+  .hero-actions { display: flex; gap: 12px; margin-top: 32px; flex-wrap: wrap; }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 22px;
+    border-radius: var(--radius);
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(20,23,31,0.14); }
+  .btn-primary { background: var(--ink); color: var(--paper); }
+  .btn-primary:hover { background: var(--stamp); }
+  .btn-ghost { border: 1px solid var(--ink); }
+  .btn-ghost:hover { background: var(--ink); color: var(--paper); }
+
+  .hero-stamp { display: flex; justify-content: center; }
+  .stamp {
+    width: 230px; height: 230px;
+    color: var(--stamp);
+    animation: stampImpact 0.9s cubic-bezier(.2,.8,.2,1) 0.5s both;
+  }
+  @keyframes stampImpact {
+    0%   { transform: scale(1.5) rotate(6deg); opacity: 0; }
+    55%  { transform: scale(0.95) rotate(-11deg); opacity: 1; }
+    78%  { transform: scale(1.03) rotate(-7deg); }
+    100% { transform: scale(1) rotate(-8deg); opacity: 1; }
+  }
+  .stamp-ring-outer { fill: none; stroke: currentColor; stroke-width: 2.5; }
+  .stamp-ring-dash { fill: none; stroke: currentColor; stroke-width: 1; stroke-dasharray: 1 5; }
+  .stamp-arc-text { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 3px; fill: currentColor; }
+  .stamp-num { font-family: var(--font-sans); font-size: 46px; font-weight: 700; fill: currentColor; }
+  .stamp-label { font-family: var(--font-mono); font-size: 10px; letter-spacing: 2px; fill: currentColor; }
+  .stamp-label-sub { font-family: var(--font-mono); font-size: 8px; letter-spacing: 1.5px; fill: currentColor; opacity: 0.65; }
+
+  /* ---------- SECTIONS shared ---------- */
+  .section { padding: 96px 0; border-top: 1px solid var(--line); }
+
+  .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* ---------- ABOUT ---------- */
+  .about-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 48px; }
+  .field-notes {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 28px;
+    height: fit-content;
+  }
+  .field-notes h3 {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--slate-faint);
+    margin-bottom: 20px;
+  }
+  .field-notes dl > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 0;
+    border-top: 1px solid var(--line);
+  }
+  .field-notes dl > div:first-of-type { border-top: none; }
+  .field-notes dt { font-size: 0.84rem; color: var(--slate); }
+  .field-notes dd { font-family: var(--font-mono); font-size: 0.84rem; font-weight: 600; text-align: right; }
+  .about-body p { color: var(--slate); margin-bottom: 18px; font-size: 1.02rem; }
+  .about-body p:last-child { margin-bottom: 0; }
+
+  /* ---------- EXPERIENCE ---------- */
+  .timeline { position: relative; padding-left: 30px; border-left: 2px solid var(--line); }
+  .timeline-item { position: relative; padding-bottom: 52px; }
+  .timeline-item:last-child { padding-bottom: 0; }
+  .timeline-dot {
+    position: absolute;
+    left: -37px; top: 5px;
+    width: 10px; height: 10px;
+    border-radius: 2px;
+    background: var(--ink);
+  }
+  .timeline-dot.current {
+    background: var(--stamp);
+    box-shadow: 0 0 0 4px rgba(156,59,50,0.15);
+  }
+  .timeline-top { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px 16px; }
+  .timeline-top h3 { font-size: 1.2rem; font-weight: 600; }
+  .timeline-date {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--slate-faint);
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  .timeline-company { color: var(--stamp); font-weight: 600; margin-top: 4px; font-size: 0.9rem; }
+  .timeline-content ul { margin-top: 16px; display: flex; flex-direction: column; gap: 10px; }
+  .timeline-content li { position: relative; padding-left: 20px; color: var(--slate); font-size: 0.96rem; line-height: 1.6; }
+  .timeline-content li::before {
+    content: '';
+    position: absolute; left: 0; top: 9px;
+    width: 6px; height: 6px;
+    background: var(--ink);
+    opacity: 0.35;
+  }
+
+  /* ---------- SKILLS ---------- */
+  .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .skill-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 28px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .skill-card:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(20,23,31,0.07); }
+  .skill-card h3 {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--slate-faint);
+    margin-bottom: 18px;
+  }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.02em;
+    padding: 6px 10px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--line);
+    color: var(--slate);
+    background: var(--paper);
+  }
+  .lang-list { display: flex; flex-direction: column; gap: 14px; }
+  .lang-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .lang-name { font-size: 0.88rem; font-weight: 500; min-width: 64px; }
+  .ticks { display: flex; gap: 4px; }
+  .ticks i { display: block; width: 12px; height: 12px; border-radius: 2px; border: 1px solid var(--ink); font-style: normal; }
+  .ticks i.on { background: var(--ink); }
+  .lang-note { font-family: var(--font-mono); font-size: 0.7rem; color: var(--slate-faint); width: 100%; }
+
+  /* ---------- EDUCATION ---------- */
+  .edu-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .edu-card {
+    padding: 26px;
+    border-radius: var(--radius);
+    border: 1px solid var(--line);
+    background: var(--surface);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .edu-card:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(20,23,31,0.07); }
+  .edu-year { font-family: var(--font-mono); font-size: 1.4rem; color: var(--stamp); font-weight: 600; }
+  .edu-card h3 { margin-top: 12px; font-size: 1.04rem; line-height: 1.35; font-weight: 600; }
+  .edu-card p { margin-top: 10px; color: var(--slate); font-size: 0.88rem; }
+  .edu-extra { font-family: var(--font-mono); font-size: 0.78rem !important; color: var(--slate-faint) !important; }
+
+  /* ---------- CONTACT / FOOTER ---------- */
+  .contact { background: var(--ink); color: var(--paper); padding: 96px 0 40px; text-align: center; }
+  .contact .tag-label { color: #C97D74; }
+  .contact h2 { color: var(--paper); font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 600; }
+  .contact-sub { color: #9BA1AA; margin-top: 14px; max-width: 440px; margin-left: auto; margin-right: auto; }
+  .contact-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 36px; }
+  .contact-links a {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 0.86rem; font-weight: 500;
+    padding: 11px 18px;
+    border: 1px solid rgba(238,240,241,0.2);
+    border-radius: var(--radius);
+    transition: background 0.2s ease, border-color 0.2s ease;
+  }
+  .contact-links a:hover { background: var(--stamp); border-color: var(--stamp); }
+  .footer-note { margin-top: 56px; font-family: var(--font-mono); font-size: 0.76rem; color: #6C7178; }
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width: 960px) {
+    .hero-inner { grid-template-columns: 1fr; text-align: left; }
+    .hero-stamp { order: -1; margin-bottom: 8px; }
+    .stamp { width: 150px; height: 150px; }
+    .about-grid { grid-template-columns: 1fr; }
+    .skills-grid { grid-template-columns: 1fr; }
+    .edu-grid { grid-template-columns: 1fr; }
+    .section { padding: 72px 0; }
+  }
+
+  @media (max-width: 720px) {
+    .nav-links {
+      position: fixed;
+      top: 68px; left: 0; right: 0;
+      background: var(--paper);
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 22px 24px;
+      gap: 18px;
+      border-bottom: 1px solid var(--line);
+      transform: translateY(-150%);
+      transition: transform 0.3s ease;
+    }
+    .nav-links.open { transform: translateY(0); }
+    .nav-toggle { display: flex; }
+    .hero { padding: 116px 0 72px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+</style>
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo">M. AHMED</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="tag-label">[ HR Operations · Chennai, IN ]</p>
+      <h1>Mubashir Ahmed</h1>
+      <p class="hero-role">Senior Human Resources Executive</p>
+      <p class="hero-desc">13+ years building talent supply chains and HR operations for global enterprises — bench management, statutory compliance, and AI-augmented workflows.</p>
+      <div class="hero-actions">
+        <a href="Mubashir_Ahmed_Resume.pdf" download class="btn btn-primary">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Résumé
+        </a>
+        <a href="mailto:mubashir.ahmed.global@gmail.com" class="btn btn-ghost">Email Me</a>
+      </div>
+    </div>
+    <div class="hero-stamp" aria-hidden="true">
+      <div class="stamp">
+        <svg viewBox="0 0 200 200" width="100%" height="100%">
+          <defs>
+            <path id="stampArc" d="M 24,100 A 76,76 0 0 1 176,100" />
+          </defs>
+          <circle class="stamp-ring-outer" cx="100" cy="100" r="94" />
+          <circle class="stamp-ring-dash" cx="100" cy="100" r="82" />
+          <text class="stamp-arc-text">
+            <textPath href="#stampArc" startOffset="50%" text-anchor="middle">HR AUDIT RECORD</textPath>
+          </text>
+          <text class="stamp-num" x="100" y="114" text-anchor="middle">0</text>
+          <text class="stamp-label" x="100" y="139" text-anchor="middle">NON-CONFORMITIES</text>
+          <text class="stamp-label-sub" x="100" y="157" text-anchor="middle">CONSECUTIVE AUDIT CYCLES</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section about" id="about">
+  <div class="wrap">
+    <p class="tag-label">[ About ]</p>
+    <h2 class="section-title reveal">Process-driven HR leadership at enterprise scale</h2>
+    <div class="about-grid">
+      <aside class="field-notes reveal">
+        <h3>Field Notes</h3>
+        <dl>
+          <div><dt>Location</dt><dd>Chennai, IN</dd></div>
+          <div><dt>Years active</dt><dd>13+</dd></div>
+          <div><dt>Enterprises</dt><dd>3</dd></div>
+          <div><dt>Languages</dt><dd>5</dd></div>
+          <div><dt>Core focus</dt><dd>Bench &amp; Talent Supply Chain</dd></div>
+        </dl>
+      </aside>
+      <div class="about-body reveal">
+        <p>With over 13 years of experience, I manage the employee lifecycle, talent supply chains, and statutory compliance for global enterprise organizations. My work centers on optimizing bench management, directing high-volume permanent and contractual hiring pipelines, and executing rigorous internal HR audits.</p>
+        <p>I bring advanced data analytics — Power BI and advanced Excel — together with AI methodologies including ChatGPT and Claude AI, to streamline HR operations, mitigate institutional risk, and maximize resource utilization across the organizations I support.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section experience" id="experience">
+  <div class="wrap">
+    <p class="tag-label">[ Experience ]</p>
+    <h2 class="section-title reveal">Career record</h2>
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot current"></div>
+        <div class="timeline-content">
+          <div class="timeline-top">
+            <h3>Human Resources Executive &amp; Senior Coordinator</h3>
+            <span class="timeline-date">Sep 2017 — Present</span>
+          </div>
+          <p class="timeline-company">Cognizant · Chennai, Tamil Nadu, India</p>
+          <ul>
+            <li>Orchestrated comprehensive bench management and talent supply chain operations for global resources, maximizing bench utilization rates and systematically preventing organizational revenue leakage.</li>
+            <li>Directed end-to-end lateral and contractual hiring pipelines, executing high-volume recruitment initiatives and significantly reducing external agency spend through optimized, in-house sourcing strategies.</li>
+            <li>Streamlined payroll administration and complex invoice processing workflows across multiple accounts, ensuring flawless payroll execution and strict SLA adherence.</li>
+            <li>Championed statutory compliance protocols and coordinated rigorous internal HR audits, consistently securing zero non-conformities across consecutive review cycles.</li>
+            <li>Integrated generative AI tools (Claude, ChatGPT, Gemini) into daily HR workflows, automating complex document generation and communication processes to drastically reduce operational turnaround time.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-top">
+            <h3>Senior Consultant</h3>
+            <span class="timeline-date">Jan 2013 — Jul 2017</span>
+          </div>
+          <p class="timeline-company">Tech Mahindra · Greater Chennai Area, India</p>
+          <ul>
+            <li>Forecasted resource supply and demand metrics across key global accounts, balancing deployment schedules and proactively mitigating critical talent shortages.</li>
+            <li>Administered legal and statutory compliance protocols during organizational transitions, effectively mitigating institutional risk and ensuring the seamless, compliant execution of layoff amendments.</li>
+            <li>Quantified HR metrics through advanced data analysis, delivering strategic workforce planning insights directly to senior leadership teams.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-top">
+            <h3>Process Executive</h3>
+            <span class="timeline-date">Dec 2011 — Jul 2013</span>
+          </div>
+          <p class="timeline-company">Customer Broadcast P Limited · Greater Chennai Area, India</p>
+          <ul>
+            <li>Standardized operational workflows and provided cross-functional support, maintaining strict adherence to daily productivity and quality SLAs.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section skills" id="skills">
+  <div class="wrap">
+    <p class="tag-label">[ Skills ]</p>
+    <h2 class="section-title reveal">Skills on record</h2>
+    <div class="skills-grid">
+
+      <div class="skill-card reveal">
+        <h3>HR Specializations</h3>
+        <div class="chips">
+          <span class="chip">Bench Management</span>
+          <span class="chip">Resource Utilization Forecasting</span>
+          <span class="chip">Talent Supply Chain</span>
+          <span class="chip">Global Talent Acquisition</span>
+          <span class="chip">Contractual &amp; Permanent Hiring</span>
+          <span class="chip">Statutory Compliance</span>
+          <span class="chip">Legal &amp; Labor Laws</span>
+          <span class="chip">Internal HR Audits</span>
+          <span class="chip">Payroll Administration</span>
+          <span class="chip">Invoice Handling</span>
+          <span class="chip">Layoff Amendments</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <h3>HR Technology &amp; AI</h3>
+        <div class="chips">
+          <span class="chip">HCM Systems</span>
+          <span class="chip">Power BI</span>
+          <span class="chip">Advanced Excel (VLOOKUP, Macros)</span>
+          <span class="chip">Microsoft Teams</span>
+          <span class="chip">AI Prompt Engineering</span>
+          <span class="chip">Claude AI</span>
+          <span class="chip">ChatGPT</span>
+          <span class="chip">Gemini</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <h3>Languages</h3>
+        <div class="lang-list">
+          <div class="lang-row">
+            <span class="lang-name">English</span>
+            <div class="ticks"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div>
+          </div>
+          <div class="lang-row">
+            <span class="lang-name">Tamil</span>
+            <div class="ticks"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div>
+          </div>
+          <div class="lang-row">
+            <span class="lang-name">Telugu</span>
+            <div class="ticks"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div>
+          </div>
+          <div class="lang-row">
+            <span class="lang-name">Hindi</span>
+            <div class="ticks"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div>
+          </div>
+          <div class="lang-row">
+            <span class="lang-name">Spanish</span>
+            <div class="ticks"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div>
+            <span class="lang-note">Limited working proficiency</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section education" id="education">
+  <div class="wrap">
+    <p class="tag-label">[ Education ]</p>
+    <h2 class="section-title reveal">Academic record</h2>
+    <div class="edu-grid">
+
+      <div class="edu-card reveal">
+        <span class="edu-year">2016</span>
+        <h3>Master of Computer Applications</h3>
+        <p>BSA Crescent Institute of Science and Technology, Chennai</p>
+        <p class="edu-extra">Member, Computer Science Development Community</p>
+      </div>
+
+      <div class="edu-card reveal">
+        <span class="edu-year">2013</span>
+        <h3>MBA — HR Management &amp; Personnel Administration</h3>
+        <p>Anna University, Chennai</p>
+      </div>
+
+      <div class="edu-card reveal">
+        <span class="edu-year">2010</span>
+        <h3>B.Sc. Computer Science</h3>
+        <p>The New College, Chennai</p>
+        <p class="edu-extra">Grade: A</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="contact" id="contact">
+  <div class="wrap">
+    <p class="tag-label">[ Contact ]</p>
+    <h2>Let's talk talent strategy</h2>
+    <p class="contact-sub">Open to conversations on workforce planning, bench management, and HR operations.</p>
+    <div class="contact-links">
+      <a href="mailto:mubashir.ahmed.global@gmail.com">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        mubashir.ahmed.global@gmail.com
+      </a>
+      <a href="tel:+919629987271">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        +91 96299 87271
+      </a>
+      <a href="https://www.linkedin.com/in/mubashir-ahmed-a-b78106421" target="_blank" rel="noopener noreferrer">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.11 1 2.48 1s2.5 1.12 2.5 2.5zM.22 8.75h4.56V23H.22V8.75zM8.19 8.75h4.37v1.95h.06c.61-1.15 2.1-2.37 4.32-2.37 4.62 0 5.47 3.04 5.47 6.99V23h-4.56v-6.78c0-1.62-.03-3.7-2.25-3.7-2.26 0-2.61 1.76-2.61 3.58V23H8.19V8.75z"/></svg>
+        LinkedIn
+      </a>
+    </div>
+    <p class="footer-note">© <span id="year"></span> Mubashir Ahmed</p>
+  </div>
+</footer>
+
+<script>
+  // Mobile nav toggle
+  var navToggle = document.getElementById('navToggle');
+  var navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', function () {
+    var isOpen = navLinks.classList.toggle('open');
+    navToggle.classList.toggle('open', isOpen);
+    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+  navLinks.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function () {
+      navLinks.classList.remove('open');
+      navToggle.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // Scroll-spy nav highlighting
+  var sections = document.querySelectorAll('section[id], header[id]');
+  var navItems = document.querySelectorAll('.nav-link');
+  if ('IntersectionObserver' in window) {
+    var spyObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          navItems.forEach(function (link) {
+            link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id);
+          });
+        }
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    sections.forEach(function (sec) { spyObserver.observe(sec); });
+
+    // Reveal on scroll
+    var revealEls = document.querySelectorAll('.reveal');
+    var revealObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    revealEls.forEach(function (el) { revealObserver.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('visible'); });
+  }
+
+  // Footer year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
